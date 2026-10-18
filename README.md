@@ -4,7 +4,7 @@
 
 ## 動作確認
 
-報告された実機検証環境：**VIVE Flow / Android 9 (API 28) / Wi-Fi / VIVE Hub 2.3.3b / SteamVR**。PC VR映像表示、**6DoF**、**ハンドトラッキング**の動作が確認されています。ほかのVIVE Hubバージョンやゲームとの互換性は未確認です。これは動作報告であり、`patch.py` の出力APKを全環境で検証したことを意味しません。
+報告された実機検証環境：**VIVE Flow / Android 9 (API 28) / Wi-Fi / VIVE Hub 2.3.3b / SteamVR**。PC VR映像表示、**マイク**、**スピーカー**、**6DoF**、**ハンドトラッキング**の動作が確認されています。ほかのVIVE Hubバージョンやゲームとの互換性は未確認です。これは動作報告であり、`patch.py` の出力APKを全環境で検証したことを意味しません。
 
 ## 純正アプリとの違い
 
@@ -25,9 +25,19 @@ PC側の `HmdList.json` やVIVE Hub実行ファイルの変更は不要です。
 - 利用者が正規に入手した**対応する純正VIVE Business Streaming APK**（パッチは原本のマニフェストSHA-256を照合し、異なるバージョンを拒否します）
 - Windows PC、ADB、VIVE Flow
 
+## 純正APKの入手方法
+
+Windows PCに **VIVE Hub 2.3.3b** をインストールすると、VIVE Business Streamingの純正APKを次の場所から取得できます（Steamライブラリを `D:\steam` にインストールした場合）。
+
+```text
+\steam\steamapps\common\VIVE HUB\VIVE Business Streaming\RRClient\Vive_rrClient.apk
+```
+
+**Steamライブラリのインストール先が異なる場合は、パスの先頭部分を読み替えてください。** このAPKを自分の作業フォルダーにコピーしてからパッチを実行します。純正APK自体を本リポジトリから配布することはありません。
+
 ## 使い方（PowerShell）
 
-`patch.py`、`patches/changes.json`、純正APKを同じ作業フォルダーに配置します。最初に自分専用の署名鍵を生成します。
+`patch.py` と `patches/changes.json` のフォルダー構成を維持し、上記の場所からコピーした純正APKを `patch.py` と同じ作業フォルダーに配置します。最初に自分専用の署名鍵を生成します。
 
 ```powershell
 keytool -genkeypair -keystore .\viveflow.keystore -alias viveflow -keyalg RSA -keysize 3072 -validity 10000
