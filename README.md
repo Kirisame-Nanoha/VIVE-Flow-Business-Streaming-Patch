@@ -16,7 +16,7 @@
 | `lib/arm64-v8a/libnative-wvr-jni.so` | `getValidHmdType()` に関係する識別処理をFocus 3向けに修正 | PC側で `OTHER` と判定される接続拒否の回避 |
 | APK署名 | 内側・外側のAPKを利用者自身の鍵で再署名 | 修正済みAPKのインストール |
 
-PC側の `HmdList.json` やVIVE Hub実行ファイルの変更は不要です。なお、パッチは機種識別を変更するもので、実際のFlowのハードウェア性能をFocus 3に変えるものではありません。
+VIVEFlowのファームウェア、本体の改造、PC側のVIVE Hub実行ファイルの変更は不要です。なお、パッチは機種識別を変更するもので、実際のFlowのハードウェア性能をFocus 3に変えるものではありません。
 
 ## 必要なもの
 
