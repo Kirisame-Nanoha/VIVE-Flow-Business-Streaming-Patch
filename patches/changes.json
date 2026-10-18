@@ -1,0 +1,36 @@
+{
+  "format_version": 1,
+  "description": "Byte offsets and SHA-256 preconditions for user-provided original APK; no original APK payloads",
+  "patches": {
+    "AndroidManifest.xml": [
+      {
+        "offset": 4364,
+        "original_length": 1,
+        "original_sha256": "1f18d650d205d71d934c3646ff5fac1c096ba52eba4cf758b865364f4167d3cd",
+        "replacement_hex": "1c"
+      }
+    ],
+    "lib/arm64-v8a/libnative-wvr-jni.so": [
+      {
+        "offset": 625404,
+        "original_length": 32,
+        "original_sha256": "e373569186c6ec60283684de68c4fbb1bfbb08caa828339557d1af3bbd891b87",
+        "replacement_hex": "fd7bbfa9fd030091e00308aa810800d021d00691903fff97fd7bc1a8c0035fd6"
+      }
+    ],
+    "nested_classes": [
+      {
+        "offset": 2350850,
+        "original_length": 3,
+        "original_sha256": "c6095d84b4a5eeb70a6c1b77b5796df2b8a78efbdd3a6cfc556669125a2037fc",
+        "replacement_hex": "000000"
+      },
+      {
+        "offset": 2350854,
+        "original_length": 1,
+        "original_sha256": "334359b90efed75da5f0ada1d5e6b256f4a6bd0aee7eb39c0f90182a021ffc8b",
+        "replacement_hex": "00"
+      }
+    ]
+  }
+}
