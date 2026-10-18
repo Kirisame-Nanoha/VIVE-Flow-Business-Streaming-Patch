@@ -110,8 +110,6 @@ CN=ViveFlowPatch, OU=Personal, O=PersonalProject, L=Tokyo, ST=Tokyo, C=JPでよ�
 
 ※ Javaのバージョンや言語設定によって、受け付けられる確認文字列が異なる場合があります。
 
-**日本の国コードは `80` ではなく `JP` です。**
-
 完了すると、作業フォルダーに `viveflow.keystore` が作成されます。
 
 **署名鍵とパスワードはGitHubに公開しないでください。**
