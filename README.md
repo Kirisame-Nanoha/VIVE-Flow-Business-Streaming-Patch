@@ -257,6 +257,8 @@ adb shell appops set com.htc.vive.vstreaming SYSTEM_ALERT_WINDOW allow
 
 このコマンドは、VIVE Business Streamingが他のアプリの上に画面を表示するための権限を許可するものです。
 
+先にアプリを起動してしまった場合はコマンド適用後VIVEFlowを再起動してください。
+
 ### STEP 9：VIVE Hubに接続する
 
 APKのインストールと権限設定が完了したら、PC VR接続を行います。
@@ -264,6 +266,7 @@ APKのインストールと権限設定が完了したら、PC VR接続を行い
 1. Windows PCで **VIVE Hub 2.3.3b** を起動します。
 2. PCとVIVE Flowを同じネットワークに接続します。
 3. VIVE FlowでVIVE Business Streamingアプリを起動します。
+（マイク、メディアへのアクセス許可が出たらすべて許可してください）
 4. アプリに表示されたPCを選択します。
 5. Wi-Fi接続が確立するまで待ちます。
 6. SteamVRの映像が表示されれば接続成功です。
