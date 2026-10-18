@@ -163,16 +163,15 @@ Android SDK Build-Tools内の `apksigner.bat` をフルパスで指定してく�
 例えば、以下の場所にインストールされている場合です。
 
 ```text
-C:\Android\Sdk\build-tools\35.0.0\apksigner.bat
+C:\Users\Owner\AppData\Local\Android\Sdk\build-tools\34.0.0\apksigner.bat
 ```
 
 実行例：
 
 ```powershell
-python .\patch.py .\Vive_rrClient.apk --output .\Vive_Flow_FOCUS3_patched.apk --keystore .\viveflow.keystore --alias viveflow --apksigner "C:\Android\Sdk\build-tools\35.0.0\apksigner.bat"
+python .\patch.py .\Vive_rrClient.apk --output .\Vive_Flow_FOCUS3_patched.apk --keystore .\viveflow.keystore --alias viveflow --apksigner "C:\Users\Owner\AppData\Local\Android\Sdk\build-tools\34.0.0\apksigner.bat"
 ```
 
-`35.0.0` は例です。実際のインストール先に合わせて変更してください。
 
 #### パッチが途中で停止した場合
 
@@ -183,6 +182,11 @@ python .\patch.py .\Vive_rrClient.apk --output .\Vive_Flow_FOCUS3_patched.apk --
 **対応していない純正APKに対して、強制的にパッチを適用しないでください。**
 
 ### STEP 6：VIVE FlowをPCに接続する
+
+USBデバックを有効にしてPCにUSB接続します。
+ファイルの転送を押すと内部ストレージが現れるのでダウンロードフォルダにAPKをコピーしVIVEFlowからインストールしてください。
+
+以下はコマンドでの方法です。
 
 VIVE FlowでUSBデバッグを利用できる状態にして、USBケーブルでWindows PCに接続します。
 
