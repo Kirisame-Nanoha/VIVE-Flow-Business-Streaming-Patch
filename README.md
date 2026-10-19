@@ -24,6 +24,7 @@ PC側の `HmdList.json` やVIVE Hub実行ファイルの変更は不要です。
 - Android SDK Build-Tools の `apksigner` とJavaの `keytool`
 - 利用者が正規に入手した**対応する純正VIVE Business Streaming APK**（パッチは原本のマニフェストSHA-256を照合し、異なるバージョンを拒否します）
 - Windows PC、ADB、VIVE Flow
+- Steam版VIVE Hub 2.3.3b
 
 ## 純正APKの入手方法
 
